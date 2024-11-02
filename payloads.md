@@ -5,7 +5,7 @@ _Пример оформления работы_
 ## Payload 1
 
 При переходе по ссылке `https://example.com/example`. Параметр `example` можно заменить на пейлоад `<script>alert(document.cookies)</script>` для выполнения Reflected XSS инъекции в элементе `<div id="search-query-param">...</div>`, который покажет куки файлы пользователя
-g
+
 Payload 1
 При создании нового сниппета можно написать в нём <a onmouseover="alert(document.cookie) href='#'">text</a>, который будет выводит куки при наведении.
 

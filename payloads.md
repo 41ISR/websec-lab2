@@ -1,6 +1,6 @@
 # Payloads для gruyere
 
-[интересная фича на сайте о который знает 1% людей](https://clck.ru/3EMU7t)
+[100% не рикролл](https://clck.ru/3EMU7t)
 
 ## Payload 1
 

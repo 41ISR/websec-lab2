@@ -1,44 +1,38 @@
-# SQL инъекция
+Все пользователи и их зарплаты:
+james_kirk: 50000
 
-Данный документ описывает лабораторную работу по изучению SQL-инъекций. В рамках работы будут анализировать уязвимости веб-приложения, развернутого в Docker-контейнере, и применение методов эксплуатации уязвимостей.
+spock: 45000
 
-## Цели работы:
+leonard_mccoy: 42000
 
-- Определение уязвимых SQL-запросов.
-- Проведение атак с использованием SQL-инъекций.
-- Получение скрытых данных из базы данных.
-- Анализ методов защиты от атак.
+nyota_uhura: 40000
 
-## Ресурс
+montgomery_scott: 43000
 
-[Сайт](http://147.45.213.18:8080)
+pavel_chekov: 38000
 
-## Задания
+hikaru_sulu: 39000
 
-1. Достать всех пользователей и их зарплаты
+Версия MySQL: 8.0.36-0ubuntu0.20.04.1
 
-2. Узнать версию MySQL
+Пароли всех пользователей:
 
-3. Узнать пароли всех пользователей
+james_kirk: kobayashi_maru
 
-4. Определить текущего пользователя базы данных
+spock: logic123
 
-5. Извлечь имена таблиц из схемы базы данных
+leonard_mccoy: bones456
 
-6. Получить список столбцов users таблицы
+nyota_uhura: comm789
 
-## Сдача
+montgomery_scott: engineer123
 
-Создайте форк репозитория `websec-lab2-{ваша_фамилия}` в организацию `41ISR`, работайте в ветке `dev`. Удалите содержимое файла `README.md` и работайте в нем же. По завершению работы сделайте пулл реквест `dev` => `main` и отметьте  [меня](https://github.com/ktkv419) ревьювером
+pavel_chekov: russian456
 
-## Credentials
+hikaru_sulu: helm789
 
-Логин и пароль для получения зарплаты кирка
+Текущий пользователь БД: root@localhost
 
-- <code>username</code>: <code>james_kirk</code>
-- <code>password</code>: <code>kobayashi_maru</code>
+Имена таблиц: users, salary_info, system_logs
 
-## Подсказки
-
-- [PayloadAllTheThigs](https://swisskyrepo.github.io/PayloadsAllTheThings/)
-- [SQL Injection List](https://github.com/payloadbox/sql-injection-payload-list)
+Столбцы таблицы users: id, username, password, salary, department_id, is_admin
